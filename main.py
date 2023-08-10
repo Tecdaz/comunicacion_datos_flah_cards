@@ -13,7 +13,7 @@ def clear():
 
 
 def load_data() -> dict:
-    archive = open('preguntas_respuestas.txt')
+    archive = open('preguntas_respuestas.txt', mode='r', encoding='UTF8')
 
     questions_answers_list: list = archive.read().split('\n\n')
     questions_answers_list: list = [
